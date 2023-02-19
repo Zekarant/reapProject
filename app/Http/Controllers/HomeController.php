@@ -21,7 +21,7 @@ class HomeController extends Controller
 
     public function notification(String $name)
     {
-        return Http::post('https://discord.com/api/webhooks/1076904889378144287/JqnD-2tI8WPrN7bAzfE54kyydFea6cUZIu906iad7sv2WdoRHw8sx8o_nQBUb5auowR7', [
+        return Http::post('URL_WEBHOOK', [
             'content' => "Une nouvelle image a été ajoutée à la galerie",
             'embeds' => [
                 [
